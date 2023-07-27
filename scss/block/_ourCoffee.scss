@@ -1,0 +1,39 @@
+.our__coffee{
+    margin-bottom: 200px;
+    .our__coffee--box{
+        .our__coffee--wrapper{
+            position: relative;
+            & > img{
+                width: 100%;
+                max-width: 1111px;
+                position: absolute;
+                text-align: center;
+                z-index: 1;
+            }
+            padding-top: 126px;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            .our__coffee--item{
+                z-index: 2;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                // align-items: flex-start;
+                gap: 72px;
+                .our__coffee__item--title{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 24px;    
+                    text-align: center;
+                    & > h3{
+                        @include font($francus__Font, 24px, 900, #333D4B, 32px);
+                    }
+                    & > p{
+                        @include font($barlow__Font, 16px, 400, #333D4B, 26px );
+                    }                
+                }
+            }
+        }
+    }
+}

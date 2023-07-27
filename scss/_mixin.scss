@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Fraunces 9pt';
+    src: url('/font/Fraunces\ 9pt\ S000\ Regular.ttf');
+}
+
+$barlow__Font: "Barlow";
+$francus__Font: 'Fraunces 9pt'; 
+
+@mixin font($f__family,$f__size, $f__weight, $f__color, $l__height:none, $l__spacing:none){
+    font-family: $f__family;
+    font-size: $f__size;
+    font-weight: $f__weight;
+    line-height: $l__height;
+    letter-spacing: $l__spacing;
+    color: $f__color;
+}
